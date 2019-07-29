@@ -25,8 +25,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class PerforcePluginTest {
 
-  @Test
-  public void getExtensions() {
-    assertThat(new PerforcePlugin().getExtensions()).hasSize(11);
-  }
+    @Test
+    public void getExtensions() {
+        assertThat(new PerforcePlugin().getExtensions()).hasSize(12);
+    }
 }
