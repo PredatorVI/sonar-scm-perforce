@@ -22,7 +22,6 @@ package org.sonar.plugins.scm.perforce;
 import java.io.File;
 import java.net.URISyntaxException;
 import java.util.List;
-import java.util.Optional;
 import java.util.Properties;
 
 import javax.annotation.Nonnull;

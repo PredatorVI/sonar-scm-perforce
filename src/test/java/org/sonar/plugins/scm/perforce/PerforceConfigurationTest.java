@@ -23,17 +23,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
 import org.sonar.api.config.PropertyDefinitions;
-import org.sonar.api.config.Settings;
 import org.sonar.api.config.internal.ConfigurationBridge;
 import org.sonar.api.config.internal.MapSettings;
 
 import com.perforce.p4java.impl.mapbased.rpc.RpcPropertyDefs;
-
 public class PerforceConfigurationTest {
 
     @Test
     public void checkDefaultValues() {
-	Settings settings = new MapSettings(new PropertyDefinitions(PerforceConfiguration.getProperties()));
+	MapSettings settings = new MapSettings(new PropertyDefinitions(PerforceConfiguration.getProperties()));
 	ConfigurationBridge bridge = new ConfigurationBridge(settings);
 
 	PerforceConfiguration config = new PerforceConfiguration(bridge);
